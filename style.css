@@ -1,0 +1,163 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Unbounded', cursive;
+    background-color: #d4ddef;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 55px;
+}
+
+.canal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.canal i {
+    color: red;
+}
+
+/* CONTAINER & PRINCIPAL */
+.container {
+    width: 90%;
+    height: 80vh;
+    margin: 0px auto 50px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.seccion1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+textarea {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 200px;
+    font-size: 25px;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.seccion1 p {
+    font-size: 13px;
+    color: rgb(103, 24, 24);
+}
+
+.seccion1 button,
+.seccion2 button {
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all ease 400ms;
+}
+
+.seccion1 button:hover,
+.seccion2 button:hover {
+    transform: scale(1.05);
+    background-color: green;
+    color:black;
+}
+
+.botones {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+
+}
+
+.seccion1 .btnEncriptar {
+    border: 1px solid rgb(17, 121, 201);
+    color: rgb(17, 121, 201);
+    flex: 1;
+}
+
+.seccion1 .btnDecencriptar {
+    border: 1px solid rgb(17, 121, 201);
+    color: rgb(17, 121, 201);
+    flex: 1;
+}
+
+.error {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid rgb(188, 1, 66);
+    color: rgb(188, 1, 66);
+    margin: 7px;
+    border-radius: 5px;
+}
+
+/* SECCION 2 */
+.seccion2 {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgb(26, 54, 83);
+}
+
+.seccion2 img {
+    width: 175px;
+}
+
+.seccion2 .btnCopiar {
+    border: 2px solid darkblue;
+    color: rgb(17, 121, 201);
+    margin: 20px 0;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 550px) {
+    .container {
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+
+    .seccion1 {
+        height: 250px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+}
+
